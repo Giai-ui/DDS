@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Modelo de Cajas</title>
+</head>
+<body>
+    <header>
+        <h1>Modelo de Cajas</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="modeloDeCajas.html">Modelo de Cajas</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>¿Qué es el Modelo de Cajas?</h2>
+            <p>El modelo de cajas es un concepto fundamental en CSS que describe cómo se representan los elementos HTML en la página web. Cada elemento se representa como una caja rectangular que consta de varias partes: el contenido, el padding, el borde y el margen.</p>
+        </section>
+        <section>
+            <h2>Partes del Modelo de Cajas</h2>
+            <ul>
+                <li><strong>Contenido:</strong> Es la parte central de la caja donde se encuentra el texto o los elementos hijos.</li>
+                <li><strong>Padding:</strong> Es el espacio entre el contenido y el borde de la caja. Se utiliza para separar visualmente el contenido del borde.</li>
+                <li><strong>Borde:</strong> Es la línea que rodea la caja. Puede tener diferentes estilos, colores y grosores.</li>
+                <li><strong>Margen:</strong> Es el espacio exterior a la caja que separa un elemento de otro. No tiene color ni estilo, pero afecta la disposición de los elementos en la página.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Importancia del Modelo de Cajas</h2>
+            <p>Comprender el modelo de cajas es esencial para diseñar y maquetar páginas web de manera efectiva. Permite controlar el espacio y la disposición de los elementos, lo que contribuye a una mejor experiencia de usuario y a un diseño más atractivo.</p>
+        </section>
+        <section>
+            <h2>Tipos de Cajas</h2>
+            <p>El modelo de cajas se compone de las siguientes partes:</p>
+            <ul>
+                <li><strong>Cajas en Linea:</strong> Se muestran uno al lado del otro.</li>
+                <li><strong>Cajas en Bloque:</strong> Se muestran una debajo de la otra.</li>
+            </ul>
+            <p>El tipo de caja se determina por la propiedad CSS "display". Las cajas en línea se crean con "display: inline", mientras que las cajas en bloque se crean con "display: block".</p>
+        </section>
+        <section>
+            <h2>Caja en Linea</h2>
+            <p>Caracteristicas:</p>
+            <ul>
+                <li>No fuerza un salto de línea después de sí mismo.</li>
+                <li>Se aplican relleno, margen y bordes verticales, pero no mantienen alejadas otras cajas en línea.</li>
+                <li>Se aplican relleno, margen y bordes horizontales, y mantienen alejadas otras cajas en línea.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Caja en Bloque</h2>
+            <p>Caracteristicas:</p>
+            <ul>
+                <li>Fuerza un salto de línea después de sí mismo.</li>
+                <li>Se respetan las propiedades de ancho y alto.</li>
+                <li>La caja sera tan ancha como su contenedor, y llenara el 100% del espacio disponible.</li>
+                <li>Se aplican relleno, margen y bordes verticales, y mantienen alejadas otras cajas en bloque.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Visualizacion Interna y Externa</h2>
+            <p>El tipo de visualizacion determina cómo se muestra un elemento en la página.</p>
+            <h3>Visualizacion Interna</h3>
+            <p>Los elementos con visualizacion interna se muestran dentro de su contenedor, y
+            <h3>Visualizacion Externa</h3>
+            <p>Los elementos con visualizacion externa se muestran fuera de su contenedor, y pueden afectar la disposición de otros elementos en la página.</p>
+            </p>El tipo de visualizacion se determina por la propiedad CSS "display". Las cajas en línea y en bloque son ejemplos de visualizacion interna, mientras que las cajas flotantes y las cajas absolutas son ejemplos de visualizacion externa.</p>
+        </section>
+        <section>
+            <h2>Ejemplos de Cajas</h2>
+            <p>Los elementos HTML como <code>&lt;span&gt;</code> y <code>&lt;a&gt;</code> son ejemplos de cajas en línea, mientras que <code>&lt;div&gt;</code> y <code>&lt;p&gt;</code> son ejemplos de cajas en bloque.</p>
+            <p class="caja">Caja en Linea</p>
+            <ul class="caja" id="lista">
+                <li class="item">Item One</li>
+                <li class="item">Item Two</li>
+                <li class="item">Item Three</li>
+            </ul>
+            <p class="caja">Caja en Bloque <span class="block">words</span> have been wrapped in a <span>span element</span>.</p>
+        </section>
+    </main> 
+    </main>
+    <footer>
+        <p>&copy; 2024 Maquetacion Web. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

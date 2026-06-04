@@ -1,0 +1,15 @@
+.caja{
+    border: 2px solid rebeccapurple;
+    padding: .5em;
+}
+.block, .item {
+    border: 2px solid blue;
+    padding: .5em;
+}
+#lista{
+    display: flex;
+    list-style: none;
+}
+.block{
+    display: block;
+}

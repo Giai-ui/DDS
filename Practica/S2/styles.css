@@ -15,6 +15,14 @@ section {
     border: 2px solid rgb(60, 145, 8);
     border-radius: 10px;
     padding: 20px;
+/*El selector de tipo de elemento es menos especifico que el selector de atributo*/
+input {
+    /*Selector de tipo de elemento*/
+    background-color: rgb(255, 0, 191);
+    border: 2px solid rgb(127, 4, 4);
+    border-radius: 5px;
+    padding: 5px;
+}
 }
 .atributos-formulario {
     /*Clase*/
@@ -37,14 +45,6 @@ input[type="text"] {
     /*Selector de atributo*/
     background-color: rgb(255, 255, 0);
     border: 2px solid rgb(255, 0, 0);
-    border-radius: 5px;
-    padding: 5px;
-}
-/*El selector de tipo de elemento es menos especifico que el selector de atributo*/
-input {
-    /*Selector de tipo de elemento*/
-    background-color: rgb(255, 0, 191);
-    border: 2px solid rgb(127, 4, 4);
     border-radius: 5px;
     padding: 5px;
 }
