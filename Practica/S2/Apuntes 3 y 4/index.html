@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ejemplo de Secciones</title>
+</head>
+<body>
+    <header>
+        <h1>Encabezado de la pagina</h1>
+        <p>Este es un ejemplo de NAVEGACION para el cual se utiliza la etiqueta &lt;nav&gt;, y adentro de ella se encuentra la etiqueta &lt;ul&gt; (lista desordenada), con sus secciones, &lt;li&gt;.</p>
+        <nav>
+            <ul>
+                <li><a href="#article">Etiqueta article</a></li>
+                <li><a href="#footer">Etiqueta footer</a></li>
+                <li><a href="#aside">Etiqueta aside</a></li>
+                <li><a href="#atributos">Atributos</a></li>
+                <li><a href="#formularios">Formularios</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="article">
+            <h2>Article</h2>
+            <p>La etiqueta &lt;article&gt; se utiliza para representar un contenido independiente y autónomo dentro de un documento HTML. Es ideal para encapsular contenido que podría ser distribuido o reutilizado de manera independiente, como una publicación de blog, un artículo de noticias, una entrada de foro, o cualquier otro tipo de contenido que tenga sentido por sí mismo.</p>
+            <article>
+                <h3>Titulo del Articulo</h3>
+                <p>Contenido del artículo.</p>
+            </article>
+            <article>
+                <h3>Header</h3>
+                <p>La etiqueta &lt;header&gt; se utiliza para representar el encabezado de un documento o sección. Es comúnmente utilizada para incluir información de identificación, como el título del documento, el autor, o cualquier otro tipo de información que se considere relevante para el inicio del contenido.</p>
+            </article>
+            <article>
+                <h3>Main</h3>
+                <p>La etiqueta &lt;main&gt; se utiliza para representar el contenido principal de un documento HTML. Es comúnmente utilizada para incluir el contenido principal del sitio web, que es único para cada página.</p>
+            </article>
+            <article>
+                <h3>Section</h3>
+                <p>La etiqueta &lt;section&gt; se utiliza para representar una sección genérica de un documento. Es comúnmente utilizada para agrupar contenido relacionado dentro de un documento, como capítulos, temas, o cualquier otro tipo de agrupación lógica de contenido.</p>
+            </article>
+            <article>
+                <h3>Nav</h3>
+                <p>La etiqueta &lt;nav&gt; se utiliza para representar una sección de navegación dentro de un documento HTML. Es comúnmente utilizada para incluir enlaces a otras partes del sitio web, como menús de navegación, enlaces a secciones específicas, o cualquier otro tipo de enlace que facilite la navegación del usuario.</p>
+            </article>
+        </section>
+        <section id="atributos">
+            <h2>Atributos</h2>
+            <p>Los atributos son propiedades que se pueden agregar a las etiquetas HTML para modificar su comportamiento o apariencia. Algunos atributos comunes incluyen:</p>
+            <ul>
+                <li><strong>id</strong>: Proporciona un identificador único para el elemento.</li>
+                <li><strong>class</strong>: Asigna una o más clases CSS al elemento.</li>
+                <li><strong>title</strong>: Proporciona información adicional sobre el elemento, que se muestra como un tooltip.</li>
+                <li><strong>href</strong>: Especifica la URL a la que enlaza el elemento.</li>
+                <li><strong>src</strong>: Especifica la URL de una imagen o recurso multimedia.</li>
+                <li><strong>alt</strong>: Proporciona texto alternativo para una imagen, que se muestra si la imagen no se puede cargar.</li>
+                <li><strong>type</strong>: Especifica el tipo de contenido del elemento.</li>
+                <li><strong>value</strong>: Especifica el valor de un elemento, como un campo de formulario.</li>
+            </ul>
+        </section>
+        <section id="formularios">
+            <h2>Formularios</h2>
+            <p>Sección de una página web que permite al usuario ingresar y enviar datos a un servidor web.</p>
+            <p>Los formularios se crean utilizando la etiqueta &lt;form&gt; y pueden contener diversos elementos de entrada, como campos de texto, botones de radio, casillas de verificación, menús desplegables, y botones de envío. Los formularios son esenciales para la interacción del usuario con el sitio web, permitiendo la recopilación de información, la realización de búsquedas, la autenticación de usuarios, y muchas otras funciones.</p>
+            <ul class="atributos-formulario">
+                <li><strong>action</strong>: Especifica la URL a la que se enviarán los datos del formulario cuando se envíe.</li>
+                <li><strong>method</strong>: Especifica el método HTTP que se utilizará para enviar los datos del formulario (por ejemplo, "get" o "post").</li>
+                <li><strong>enctype</strong>: Especifica el tipo de codificación que se utilizará al enviar los datos del formulario (por ejemplo, "application/x-www-form-urlencoded" o "multipart/form-data").</li>
+                <li><strong>name</strong>: Proporciona un nombre para el formulario, que puede ser utilizado para identificarlo en el servidor.</li>
+                <li><strong>target</strong>: Especifica dónde se abrirá la respuesta después de enviar el formulario (por ejemplo, "_blank" para abrir en una nueva pestaña).</li>
+                <li><strong>autocomplete</strong>: Especifica si el navegador debe habilitar o deshabilitar la función de autocompletar para los campos del formulario.</li>
+                <li><strong>novalidate</strong>: Especifica que el formulario no debe ser validado antes de enviarse.</li>
+                <li><strong>class y id</strong>: Se utilizan para asignar clases CSS y un identificador único al formulario, respectivamente.</li>
+            </ul>
+            <article>
+                <h3>Ejemplo de formulario (Por VSC)</h3>
+                <form action="/submit" method="post">
+                    <label for="name">Nombre: Este es un label</label>
+                    <input type="text" id="name" name="name" required>
+                    <br>
+                    <label for="email">Correo electrónico: Este es un label</label>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+                    <input type="submit" value="Enviar">
+                </form>
+                <img src="Captura de pantalla 2026-05-21 181914.png" alt="Input types">
+            </article>
+            <article>
+                <h3>Etiquetas de formulario</h3>
+                <p>&lt;form&gt;: Se utiliza para crear un formulario HTML.</p>
+                <ul>
+                    <li><strong>&lt;input&gt;</strong>: Se utiliza para crear diversos tipos de campos de entrada, como texto, correo electrónico, contraseña, etc.</li>
+                    <li><strong>&lt;label&gt;</strong>: Se utiliza para asociar una etiqueta descriptiva con un elemento de formulario.</li>
+                    <li><strong>&lt;textarea&gt;</strong>: Se utiliza para crear un campo de texto de varias líneas.</li>
+                    <li><strong>&lt;select&gt;</strong>: Se utiliza para crear un menú desplegable.</li>
+                    <li><strong>&lt;option&gt;</strong>: Se utiliza dentro de un elemento &lt;select&gt; para definir las opciones disponibles en el menú desplegable.</li>
+                    <li><strong>&lt;button&gt;</strong>: Se utiliza para crear un botón que puede ser utilizado para enviar el formulario o realizar otras acciones.</li>
+                    <li><strong>&lt;fieldset&gt;</strong>: Se utiliza para agrupar elementos relacionados dentro de un formulario, y suele ir acompañado de una etiqueta &lt;legend&gt; para proporcionar un título a ese grupo.</li>
+                    <li><strong>&lt;legend&gt;</strong>: Se utiliza para proporcionar un título a un grupo de elementos dentro de un &lt;fieldset&gt;.</li>
+                    <li><strong>&lt;datalist&gt;</strong>: Se utiliza para proporcionar una lista de opciones predefinidas para un campo de entrada, que el usuario puede seleccionar o escribir manualmente.</li>
+                    <li><strong>&lt;output&gt;</strong>: Se utiliza para representar el resultado de un cálculo o acción realizada por el usuario dentro de un formulario.</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Uso correcto de &lt;label&gt;</h3>
+                <form>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+                    <br>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email">
+                    <br>
+                    <label for="mensaje">Mensaje:</label>
+                    <br>
+                    <textarea id="mensaje" name="mensaje">Textarea</textarea>
+                    <br>
+                    <button type="submit">Enviar</button>
+                </form>
+            </article>
+        </section>
+    </main>
+    <aside>
+        <h2>Aside</h2>
+        <p>La etiqueta &lt;aside&gt; se utiliza para representar contenido que está relacionado de manera tangencial con el contenido principal del documento, pero que no es parte esencial de él. Es comúnmente utilizada para incluir información adicional, como barras laterales, anuncios, enlaces relacionados, o cualquier otro tipo de contenido que pueda complementar el contenido principal sin ser fundamental para su comprensión.</p>
+    </aside>
+    <aside>
+        <h2>Ej: Barra lateral</h2>
+        <p>Contenido de la barra lateral...</p>
+    </aside>
+    <footer>
+        <h2>Footer</h2>
+        <p>La etiqueta &lt;footer&gt; se utiliza para representar el pie de página de un documento o sección. Es comúnmente utilizada para incluir información de contacto, derechos de autor, enlaces a políticas de privacidad, o cualquier otro tipo de información que se considere relevante para el final del contenido.</p>
+    </footer>
+    <footer>
+        <p>Ej: Pie de página &copy; 2024</p>
+    </footer>
+</body>
+</html>

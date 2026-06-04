@@ -1,0 +1,48 @@
+h1 {
+    color: rgb(167, 15, 15);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    font-style: italic;
+}
+section {
+    background-color: rgb(11, 110, 115);
+    border: 2px solid rgb(60, 145, 8);
+    border-radius: 10px;
+    padding: 20px;
+}
+.atributos-formulario {
+    /*Clase*/
+    list-style-type: armenian;
+    margin-left: 20px;
+    background-color: rgb(0, 255, 38);
+    border: 2px solid rgb(136, 255, 0);
+    border-radius: 10px;
+    padding: 20px;
+}
+/*La clase es mas especifica que el id*/
+#formularios {
+    /*Formulario*/
+    background-color: rgb(159, 36, 36);
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 10px;
+    padding: 20px;
+}
+input[type="text"] {
+    /*Selector de atributo*/
+    background-color: rgb(255, 255, 0);
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 5px;
+    padding: 5px;
+}
+/*El selector de tipo de elemento es menos especifico que el selector de atributo*/
+input {
+    /*Selector de tipo de elemento*/
+    background-color: rgb(255, 0, 191);
+    border: 2px solid rgb(127, 4, 4);
+    border-radius: 5px;
+    padding: 5px;
+}
+* {
+    /*Selector universal*/
+    background-color: rgb(171, 10, 158);
+}
